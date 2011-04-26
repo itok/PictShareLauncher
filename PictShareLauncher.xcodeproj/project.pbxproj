@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		577693301364B81D006DD144 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5776932F1364B81D006DD144 /* UIKit.framework */; };
+		577693321364B81D006DD144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577693311364B81D006DD144 /* Foundation.framework */; };
+		577693341364B81D006DD144 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577693331364B81D006DD144 /* CoreGraphics.framework */; };
+		5776933A1364B81D006DD144 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 577693381364B81D006DD144 /* InfoPlist.strings */; };
+		5776933D1364B81D006DD144 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5776933C1364B81D006DD144 /* main.m */; };
+		577693401364B81D006DD144 /* PictShareLauncherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5776933F1364B81D006DD144 /* PictShareLauncherAppDelegate.m */; };
+		577693431364B81D006DD144 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577693411364B81D006DD144 /* MainWindow.xib */; };
+		577693461364B81D006DD144 /* PictShareLauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577693451364B81D006DD144 /* PictShareLauncherViewController.m */; };
+		577693491364B81D006DD144 /* PictShareLauncherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577693471364B81D006DD144 /* PictShareLauncherViewController.xib */; };
+		5776935F1364BA2E006DD144 /* PictShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5776935E1364BA2E006DD144 /* PictShare.m */; };
+		57D00E2A1365E68400F48F0C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5776935B1364BA02006DD144 /* MobileCoreServices.framework */; };
+		57D00E2D1365E94700F48F0C /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57D00E2B1365E94700F48F0C /* 0.jpg */; };
+		57E03FE9136743690006D7A6 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E03FE8136743690006D7A6 /* 1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5776932B1364B81D006DD144 /* PictShareLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictShareLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5776932F1364B81D006DD144 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		577693311364B81D006DD144 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		577693331364B81D006DD144 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		577693371364B81D006DD144 /* PictShareLauncher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PictShareLauncher-Info.plist"; sourceTree = "<group>"; };
+		577693391364B81D006DD144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5776933B1364B81D006DD144 /* PictShareLauncher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PictShareLauncher-Prefix.pch"; sourceTree = "<group>"; };
+		5776933C1364B81D006DD144 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5776933E1364B81D006DD144 /* PictShareLauncherAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictShareLauncherAppDelegate.h; sourceTree = "<group>"; };
+		5776933F1364B81D006DD144 /* PictShareLauncherAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictShareLauncherAppDelegate.m; sourceTree = "<group>"; };
+		577693421364B81D006DD144 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		577693441364B81D006DD144 /* PictShareLauncherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictShareLauncherViewController.h; sourceTree = "<group>"; };
+		577693451364B81D006DD144 /* PictShareLauncherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictShareLauncherViewController.m; sourceTree = "<group>"; };
+		577693481364B81D006DD144 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PictShareLauncherViewController.xib; sourceTree = "<group>"; };
+		577693501364B842006DD144 /* PictShareParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictShareParams.h; sourceTree = "<group>"; };
+		5776935B1364BA02006DD144 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5776935D1364BA2E006DD144 /* PictShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictShare.h; sourceTree = "<group>"; };
+		5776935E1364BA2E006DD144 /* PictShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictShare.m; sourceTree = "<group>"; };
+		57D00E2B1365E94700F48F0C /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		57E03FE8136743690006D7A6 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		577693281364B81D006DD144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577693301364B81D006DD144 /* UIKit.framework in Frameworks */,
+				577693321364B81D006DD144 /* Foundation.framework in Frameworks */,
+				577693341364B81D006DD144 /* CoreGraphics.framework in Frameworks */,
+				57D00E2A1365E68400F48F0C /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		577693201364B81D006DD144 = {
+			isa = PBXGroup;
+			children = (
+				577693351364B81D006DD144 /* PictShareLauncher */,
+				5776934F1364B842006DD144 /* PictShare */,
+				5776932E1364B81D006DD144 /* Frameworks */,
+				5776932C1364B81D006DD144 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5776932C1364B81D006DD144 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5776932B1364B81D006DD144 /* PictShareLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5776932E1364B81D006DD144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5776935B1364BA02006DD144 /* MobileCoreServices.framework */,
+				5776932F1364B81D006DD144 /* UIKit.framework */,
+				577693311364B81D006DD144 /* Foundation.framework */,
+				577693331364B81D006DD144 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		577693351364B81D006DD144 /* PictShareLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				5776933E1364B81D006DD144 /* PictShareLauncherAppDelegate.h */,
+				5776933F1364B81D006DD144 /* PictShareLauncherAppDelegate.m */,
+				577693411364B81D006DD144 /* MainWindow.xib */,
+				577693441364B81D006DD144 /* PictShareLauncherViewController.h */,
+				577693451364B81D006DD144 /* PictShareLauncherViewController.m */,
+				577693471364B81D006DD144 /* PictShareLauncherViewController.xib */,
+				577693361364B81D006DD144 /* Supporting Files */,
+			);
+			path = PictShareLauncher;
+			sourceTree = "<group>";
+		};
+		577693361364B81D006DD144 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57D00E2B1365E94700F48F0C /* 0.jpg */,
+				57E03FE8136743690006D7A6 /* 1.png */,
+				577693371364B81D006DD144 /* PictShareLauncher-Info.plist */,
+				577693381364B81D006DD144 /* InfoPlist.strings */,
+				5776933B1364B81D006DD144 /* PictShareLauncher-Prefix.pch */,
+				5776933C1364B81D006DD144 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5776934F1364B842006DD144 /* PictShare */ = {
+			isa = PBXGroup;
+			children = (
+				577693501364B842006DD144 /* PictShareParams.h */,
+				5776935D1364BA2E006DD144 /* PictShare.h */,
+				5776935E1364BA2E006DD144 /* PictShare.m */,
+			);
+			path = PictShare;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5776932A1364B81D006DD144 /* PictShareLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5776934C1364B81D006DD144 /* Build configuration list for PBXNativeTarget "PictShareLauncher" */;
+			buildPhases = (
+				577693271364B81D006DD144 /* Sources */,
+				577693281364B81D006DD144 /* Frameworks */,
+				577693291364B81D006DD144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PictShareLauncher;
+			productName = PictShareLauncher;
+			productReference = 5776932B1364B81D006DD144 /* PictShareLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		577693221364B81D006DD144 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 577693251364B81D006DD144 /* Build configuration list for PBXProject "PictShareLauncher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 577693201364B81D006DD144;
+			productRefGroup = 5776932C1364B81D006DD144 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5776932A1364B81D006DD144 /* PictShareLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		577693291364B81D006DD144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5776933A1364B81D006DD144 /* InfoPlist.strings in Resources */,
+				577693431364B81D006DD144 /* MainWindow.xib in Resources */,
+				577693491364B81D006DD144 /* PictShareLauncherViewController.xib in Resources */,
+				57D00E2D1365E94700F48F0C /* 0.jpg in Resources */,
+				57E03FE9136743690006D7A6 /* 1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		577693271364B81D006DD144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5776933D1364B81D006DD144 /* main.m in Sources */,
+				577693401364B81D006DD144 /* PictShareLauncherAppDelegate.m in Sources */,
+				577693461364B81D006DD144 /* PictShareLauncherViewController.m in Sources */,
+				5776935F1364BA2E006DD144 /* PictShare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		577693381364B81D006DD144 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577693391364B81D006DD144 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		577693411364B81D006DD144 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577693421364B81D006DD144 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		577693471364B81D006DD144 /* PictShareLauncherViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577693481364B81D006DD144 /* en */,
+			);
+			name = PictShareLauncherViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5776934A1364B81D006DD144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5776934B1364B81D006DD144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		5776934D1364B81D006DD144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PictShareLauncher/PictShareLauncher-Prefix.pch";
+				INFOPLIST_FILE = "PictShareLauncher/PictShareLauncher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5776934E1364B81D006DD144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PictShareLauncher/PictShareLauncher-Prefix.pch";
+				INFOPLIST_FILE = "PictShareLauncher/PictShareLauncher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		577693251364B81D006DD144 /* Build configuration list for PBXProject "PictShareLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5776934A1364B81D006DD144 /* Debug */,
+				5776934B1364B81D006DD144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5776934C1364B81D006DD144 /* Build configuration list for PBXNativeTarget "PictShareLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5776934D1364B81D006DD144 /* Debug */,
+				5776934E1364B81D006DD144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 577693221364B81D006DD144 /* Project object */;
+}
