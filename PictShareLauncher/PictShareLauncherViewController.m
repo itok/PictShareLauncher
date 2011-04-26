@@ -107,6 +107,11 @@
     [ctl release];
 }
 
+-(IBAction) openAppStore:(id)sender
+{
+    [PictShare openAppStore];
+}
+
 #pragma mark UIDocumentInteractionController
 
 -(void) documentInteractionControllerDidDismissOpenInMenu:(UIDocumentInteractionController *)controller

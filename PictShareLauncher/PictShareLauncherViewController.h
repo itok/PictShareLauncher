@@ -20,5 +20,6 @@
 -(IBAction) openWithData:(id)sender;
 -(IBAction) openWithImage:(id)sender;
 -(IBAction) openWithAssetsLibrary:(id)sender;
+-(IBAction) openAppStore:(id)sender;
 
 @end
