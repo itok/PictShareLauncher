@@ -59,7 +59,7 @@ static NSString* __urlEncode(NSString* str)
     }
     
     [[UIPasteboard generalPasteboard] setData:data forPasteboardType:uti];
-    NSString* base = [NSString stringWithFormat:@"%@://%@?%@=%@", PICTSHARE_SCHEME, PS_HOST_DATA, PS_PARAM_DATA_TYPE, uti];
+    NSString* base = [NSString stringWithFormat:@"%@://%@/?%@=%@", PICTSHARE_SCHEME, PS_HOST_DATA, PS_PARAM_DATA_TYPE, uti];
     return [self openPictShareWithBase:base applicationName:name backURL:backURL];
 }
 
@@ -77,7 +77,7 @@ static NSString* __urlEncode(NSString* str)
         return NO;
     }
     [[UIPasteboard generalPasteboard] setImage:image];
-    NSString* base = [NSString stringWithFormat:@"%@://%@?", PICTSHARE_SCHEME, PS_HOST_IMAGE];
+    NSString* base = [NSString stringWithFormat:@"%@://%@/?", PICTSHARE_SCHEME, PS_HOST_IMAGE];
     return [self openPictShareWithBase:base applicationName:name backURL:backURL];
 }
 
@@ -100,7 +100,7 @@ static NSString* __urlEncode(NSString* str)
     for (NSURL* url in urls) {
         [arr addObject:__urlEncode([url absoluteString])];
     }
-    NSString* base = [NSString stringWithFormat:@"%@://%@?%@=%@", PICTSHARE_SCHEME, PS_HOST_ASSETS, PS_PARAM_ASSETS, [arr componentsJoinedByString:@","]];
+    NSString* base = [NSString stringWithFormat:@"%@://%@/?%@=%@", PICTSHARE_SCHEME, PS_HOST_ASSETS, PS_PARAM_ASSETS, [arr componentsJoinedByString:@","]];
     return [self openPictShareWithBase:base applicationName:name backURL:backURL];
 }
 
