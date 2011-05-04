@@ -30,7 +30,7 @@ static NSString* __urlEncode(NSString* str)
     
     NSMutableString* str = [NSMutableString stringWithString:base];
     if (name && [name length] > 0) {
-        [str appendFormat:@"&%@=%@", PS_PARAM_APPNAME, name];
+        [str appendFormat:@"&%@=%@", PS_PARAM_APPNAME, __urlEncode(name)];
     }
     if (backURL && [backURL length] > 0) {
         [str appendFormat:@"&%@=%@", PS_PARAM_BACKURL, __urlEncode(backURL)];
