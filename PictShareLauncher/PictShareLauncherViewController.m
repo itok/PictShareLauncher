@@ -14,6 +14,7 @@
 
 #define APP_NAME    @"PictShareLauncher"
 #define BACK_URL    @"PictShareLauncher://"
+#define HASH_TAG    @"#pslauncher "
 
 #define NUMBER_ASSETS   (1)
 
@@ -63,6 +64,19 @@
     return [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", segment.selectedSegmentIndex] ofType:[exts objectAtIndex:segment.selectedSegmentIndex]];
 }
 
+-(NSDictionary*) options
+{
+    NSMutableDictionary* options = [NSMutableDictionary dictionary];    
+    if (callbackSwitch.on) {
+        [options setObject:APP_NAME forKey:PS_PARAM_APPNAME];
+        [options setObject:BACK_URL forKey:PS_PARAM_BACKURL];
+    }
+    if (hashtagSwitch.on) {
+        [options setObject:HASH_TAG forKey:PS_PARAM_HASHTAG];
+    }
+    return options;
+}
+
 -(IBAction) openWithDocumentInteractionController:(id)sender
 {
     NSURL* url = [NSURL fileURLWithPath:[self imagePath]];
@@ -77,21 +91,14 @@
     NSString* uti = (NSString*)UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (CFStringRef)[url pathExtension], NULL);
     NSData* data = [NSData dataWithContentsOfURL:url];
     
-    if (callbackSwitch.on) {
-        [PictShare openPictShareWithData:data UTI:uti applicationName:APP_NAME backURL:BACK_URL];
-    } else {
-        [PictShare openPictShareWithData:data UTI:uti];
-    }
+    [PictShare openPictShareWithData:data UTI:uti options:[self options]];
 }
 
 -(IBAction) openWithImage:(id)sender
 {
     UIImage* img = [UIImage imageWithContentsOfFile:[self imagePath]];
-    if (callbackSwitch.on) {
-        [PictShare openPictShareWithImage:img applicationName:APP_NAME backURL:BACK_URL];
-    } else {
-        [PictShare openPictShareWithImage:img];        
-    }
+
+    [PictShare openPictShareWithImage:img options:[self options]];
 }
 
 
@@ -130,11 +137,8 @@
     if (url) {
         [urls addObject:url];
         if ([urls count] == NUMBER_ASSETS) {
-            if (callbackSwitch.on) {
-                [PictShare openPictShareWithAssetURLs:urls applicationName:APP_NAME backURL:BACK_URL];
-            } else {
-                [PictShare openPictShareWithAssetURLs:urls];
-            }
+            [PictShare openPictShareWithAssetURLs:urls options:[self options]];
+
             [self dismissModalViewControllerAnimated:YES];
         }
     }

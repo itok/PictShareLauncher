@@ -27,5 +27,8 @@
 // sender application callback url
 #define PS_PARAM_BACKURL    @"backURL"
 
+// twitter hashtag
+#define PS_PARAM_HASHTAG    @"hashtag"
+
 // PictShare AppStore URL
 #define PICTSHARE_APPSTORE  @"http://itunes.apple.com/app/pictshare-multiple-photos/id390945637?mt=8"

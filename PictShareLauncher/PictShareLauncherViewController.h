@@ -11,6 +11,7 @@
 @interface PictShareLauncherViewController : UIViewController <UIDocumentInteractionControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     IBOutlet UISwitch* callbackSwitch;
+    IBOutlet UISwitch* hashtagSwitch;
     IBOutlet UISegmentedControl* segment;
     
     NSMutableArray* urls;
