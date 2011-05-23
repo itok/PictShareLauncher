@@ -26,6 +26,7 @@
  */
 +(BOOL) openPictShareWithData:(NSData*)data UTI:(NSString*)uti;
 +(BOOL) openPictShareWithData:(NSData*)data UTI:(NSString*)uti applicationName:(NSString*)name backURL:(NSString*)backURL;
++(BOOL) openPictShareWithData:(NSData*)data UTI:(NSString*)uti options:(NSDictionary*)options;
 
 /**
  * use pasteboard as image
@@ -37,6 +38,7 @@
  */
 +(BOOL) openPictShareWithImage:(UIImage*)image;
 +(BOOL) openPictShareWithImage:(UIImage*)image applicationName:(NSString*)name backURL:(NSString*)backURL;
++(BOOL) openPictShareWithImage:(UIImage*)image options:(NSDictionary*)options;
 
 /**
  * use assets library
@@ -46,6 +48,7 @@
  */
 +(BOOL) openPictShareWithAssetURLs:(NSArray*)urls;
 +(BOOL) openPictShareWithAssetURLs:(NSArray*)urls applicationName:(NSString*)name backURL:(NSString*)backURL;
++(BOOL) openPictShareWithAssetURLs:(NSArray*)urls options:(NSDictionary*)options;
 
 /**
  * open AppStore
