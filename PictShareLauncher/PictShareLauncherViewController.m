@@ -58,7 +58,9 @@
 
 -(NSString*) imagePath
 {
-    return [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", segment.selectedSegmentIndex] ofType:(segment.selectedSegmentIndex == 0) ? @"jpg" : @"png"];
+    NSArray* exts = [NSArray arrayWithObjects:@"jpg", @"png", @"mov", nil];
+    
+    return [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", segment.selectedSegmentIndex] ofType:[exts objectAtIndex:segment.selectedSegmentIndex]];
 }
 
 -(IBAction) openWithDocumentInteractionController:(id)sender
@@ -102,6 +104,7 @@
     
     UIImagePickerController* ctl = [[UIImagePickerController alloc] init];
     ctl.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    ctl.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:ctl.sourceType];
     ctl.delegate = self;
     [self presentModalViewController:ctl animated:YES];
     [ctl release];
