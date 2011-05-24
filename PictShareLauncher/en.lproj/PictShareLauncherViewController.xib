@@ -235,13 +235,28 @@
 						<string key="NSFrame">{{118, 57}, {80, 80}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="681840129"/>
+						<reference key="NSNextKeyView" ref="68561292"/>
 						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">1.png</string>
+						</object>
+					</object>
+					<object class="IBUIImageView" id="68561292">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrame">{{215, 57}, {80, 80}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="681840129"/>
+						<int key="IBUIContentMode">1</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">2.png</string>
 						</object>
 					</object>
 					<object class="IBUISegmentedControl" id="599974162">
@@ -443,6 +458,7 @@
 							<reference ref="709639905"/>
 							<reference ref="665705047"/>
 							<reference ref="528373378"/>
+							<reference ref="68561292"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -506,6 +522,11 @@
 						<reference key="object" ref="34163683"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">30</int>
+						<reference key="object" ref="68561292"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -524,6 +545,7 @@
 					<string>24.IBPluginDependency</string>
 					<string>27.IBPluginDependency</string>
 					<string>28.IBPluginDependency</string>
+					<string>30.IBPluginDependency</string>
 					<string>6.IBEditorWindowLastContentRect</string>
 					<string>6.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
@@ -533,6 +555,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>PictShareLauncherViewController</string>
 					<string>UIResponder</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -561,7 +584,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">29</int>
+			<int key="maxID">30</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -682,11 +705,13 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>0.jpg</string>
 				<string>1.png</string>
+				<string>2.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{1152, 864}</string>
 				<string>{320, 480}</string>
+				<string>{100, 56}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">301</string>

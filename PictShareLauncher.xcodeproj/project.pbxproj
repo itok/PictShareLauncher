@@ -17,6 +17,7 @@
 		577693461364B81D006DD144 /* PictShareLauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577693451364B81D006DD144 /* PictShareLauncherViewController.m */; };
 		577693491364B81D006DD144 /* PictShareLauncherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577693471364B81D006DD144 /* PictShareLauncherViewController.xib */; };
 		5776935F1364BA2E006DD144 /* PictShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5776935E1364BA2E006DD144 /* PictShare.m */; };
+		579D76F7138C42B300842B8F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 579D76F6138C42B300842B8F /* 2.png */; };
 		57B4DF0C138AD4020083D079 /* 2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DF0B138AD4020083D079 /* 2.mov */; };
 		57D00E2A1365E68400F48F0C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5776935B1364BA02006DD144 /* MobileCoreServices.framework */; };
 		57D00E2D1365E94700F48F0C /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57D00E2B1365E94700F48F0C /* 0.jpg */; };
@@ -42,6 +43,7 @@
 		5776935B1364BA02006DD144 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5776935D1364BA2E006DD144 /* PictShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictShare.h; sourceTree = "<group>"; };
 		5776935E1364BA2E006DD144 /* PictShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictShare.m; sourceTree = "<group>"; };
+		579D76F6138C42B300842B8F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		57B4DF0B138AD4020083D079 /* 2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2.mov; sourceTree = "<group>"; };
 		57D00E2B1365E94700F48F0C /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		57E03FE8136743690006D7A6 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				57D00E2B1365E94700F48F0C /* 0.jpg */,
 				57E03FE8136743690006D7A6 /* 1.png */,
 				57B4DF0B138AD4020083D079 /* 2.mov */,
+				579D76F6138C42B300842B8F /* 2.png */,
 				577693371364B81D006DD144 /* PictShareLauncher-Info.plist */,
 				577693381364B81D006DD144 /* InfoPlist.strings */,
 				5776933B1364B81D006DD144 /* PictShareLauncher-Prefix.pch */,
@@ -182,6 +185,7 @@
 				57D00E2D1365E94700F48F0C /* 0.jpg in Resources */,
 				57E03FE9136743690006D7A6 /* 1.png in Resources */,
 				57B4DF0C138AD4020083D079 /* 2.mov in Resources */,
+				579D76F7138C42B300842B8F /* 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
